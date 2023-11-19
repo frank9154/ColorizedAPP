@@ -26,6 +26,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 15
         setupSliders()
+        updateColor()
     }
     
     private func setupSliders () {
@@ -33,21 +34,17 @@ final class ViewController: UIViewController {
         rSlider.maximumValue = 1
         rSlider.value = 0
         rSlider.minimumTrackTintColor = .red
-        updateColor()
         
         gSlider.minimumValue = 0
         gSlider.maximumValue = 1
         gSlider.value = 0
         gSlider.minimumTrackTintColor = .green
-        updateColor()
-        
+       
         bSlider.minimumValue = 0
         bSlider.maximumValue = 1
         bSlider.value = 0
         bSlider.minimumTrackTintColor = .blue
-        updateColor()
-        
-    
+
     }
 
     @IBAction func redSliderValueChanged(_ sender: UISlider) {
