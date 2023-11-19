@@ -21,18 +21,27 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="oss-ct-su3"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="redSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gbt-su-TVP"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jso-qv-hQ1">
                                 <rect key="frame" x="211" y="266.66666666666669" width="118" height="30.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="8Nu-eB-lKi"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="greenSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XH6-fa-C20"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2ne-OB-Jzl">
                                 <rect key="frame" x="211" y="332.33333333333331" width="118" height="30.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="zZ4-bk-VUc"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="blueSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="gAI-qt-awj"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNg-kB-N5f">
                                 <rect key="frame" x="16" y="333" width="38" height="28"/>

@@ -27,6 +27,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func redSliderValueChanged(_ sender: UISlider) {
+    }
+    
+    
+    @IBAction func greenSliderValueChanged(_ sender: UISlider) {
+    }
+    
+    @IBAction func blueSliderValueChanged(_ sender: Any) {
+    }
+    
+    
 }
 
