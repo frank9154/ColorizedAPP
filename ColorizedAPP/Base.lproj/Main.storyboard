@@ -112,6 +112,15 @@
                             <constraint firstItem="JQu-zV-eDG" firstAttribute="centerY" secondItem="LPl-II-Jat" secondAttribute="centerY" id="w4c-Id-Y21"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bLabel" destination="zc0-7g-No0" id="gA4-DF-QhW"/>
+                        <outlet property="bSlider" destination="2ne-OB-Jzl" id="fNG-gC-c5f"/>
+                        <outlet property="colorView" destination="f4i-8R-ECC" id="2Gq-cM-hgB"/>
+                        <outlet property="gLabel" destination="MMf-oC-vbZ" id="bPO-ij-Ygi"/>
+                        <outlet property="gSlider" destination="jso-qv-hQ1" id="9bF-ar-UW3"/>
+                        <outlet property="rLabel" destination="LPl-II-Jat" id="UKp-pb-dDO"/>
+                        <outlet property="rSlider" destination="tr8-Xe-sYW" id="e0z-tU-iMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
