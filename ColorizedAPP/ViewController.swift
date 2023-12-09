@@ -24,8 +24,10 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 15
+        navigationItem.hidesBackButton = true
         setupSliders()
         updateColor()
+        
     }
     
     
