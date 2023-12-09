@@ -9,7 +9,7 @@ import UIKit
 
 final class ViewController: UIViewController {
 
-// MARK: - IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var rSlider: UISlider!
@@ -20,7 +20,7 @@ final class ViewController: UIViewController {
     @IBOutlet var gLabel: UILabel!
     @IBOutlet var bLabel: UILabel!
     
-// MARK: - View Life Cycle
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 15
@@ -29,7 +29,7 @@ final class ViewController: UIViewController {
     }
     
     
-// MARK: - IB Actions
+    // MARK: - IB Actions
     @IBAction func redSliderValueChanged(_ sender: UISlider) {
         updateColor()
     }
