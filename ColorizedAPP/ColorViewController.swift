@@ -7,7 +7,9 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class ColorViewController: UIViewController {
+    
+    weak var delegate: ColorDelegate?
 
     // MARK: - IB Outlets
     @IBOutlet var colorView: UIView!
@@ -43,11 +45,18 @@ final class ViewController: UIViewController {
     @IBAction func blueSliderValueChanged(_ sender: UISlider) {
         updateColor()
     }
+    
+    
+    @IBAction func doneButton(_ sender: UIButton) {
+        let color = colorView.backgroundColor ?? .white
+        delegate?.colorDidChoose(_color: color)
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 
 // MARK: - Setup UI
-extension ViewController {
+extension ColorViewController {
     private func setupSliders () {
         rSlider.minimumValue = 0
         rSlider.maximumValue = 1
